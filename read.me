@@ -1,0 +1,102 @@
+🏡 House Price Prediction with Explainable AI (XAI)
+A deep learning regression project that predicts house prices using the King County House Sales dataset. This project emphasizes Explainable AI (XAI) techniques such as SHAP and LIME to demystify model predictions and help users understand feature influence.
+
+It also includes an interactive real-time simulation using sliders for intuitive exploration of model behavior.
+
+🚀 Features
+✅ Data Preprocessing
+
+Cleans, normalizes, and prepares housing data
+
+Handles missing values and scales input features
+
+✅ Artificial Neural Network (ANN)
+
+TensorFlow/Keras-based regression model
+
+Uses dropout layers to reduce overfitting
+
+✅ Training & Evaluation
+
+Tracks training/validation loss over epochs
+
+Plots predictions vs actual prices to assess accuracy
+
+✅ Explainability via XAI
+
+SHAP (SHapley Additive exPlanations): Global and local feature importance
+
+LIME (Local Interpretable Model-agnostic Explanations): Explains individual predictions
+
+Interactive IML Interface: Real-time price predictions using ipywidgets
+
+✅ Comparative Analysis
+
+Evaluates SHAP, LIME, and IML based on:
+
+Fidelity (accuracy of explanation model)
+
+Unambiguity (clarity and consistency)
+
+Interpretability (ease of human understanding)
+
+📊 Key Analyses
+🔧 1. Model Training & Evaluation
+ANN with Dense + Dropout layers trained to predict house prices.
+
+Visualized loss curves to monitor training behavior.
+
+Scatter plot of predicted vs actual prices indicates strong model performance.
+
+<p align="center"> <img src="https://i.imgur.com/your-loss-plot-image.png" alt="Loss Plot" width="500"/> <img src="https://i.imgur.com/your-prediction-plot-image.png" alt="Predicted vs Actual" width="500"/> </p>
+💡 2. Explainable AI (XAI)
+🔍 SHAP (Global + Local Explanations)
+Identifies key features influencing predictions.
+
+Top features: sqft_living, grade, and lat.
+
+<p align="center"> <img src="https://i.imgur.com/your-shap-plot-image.png" alt="SHAP Summary Plot" width="600"/> </p>
+🧠 LIME (Local Interpretations)
+Provides intuitive breakdown for a single prediction.
+
+Shows which features increased or decreased a specific house's price.
+
+SHAP offers the best unambiguity (9/10) and consistent global explanations but has a high fidelity score (192.4B) and moderate interpretability (7/10).
+LIME provides the best fidelity (7.35B) with good interpretability (8/10) and decent unambiguity (7/10).
+IML (Interactive Model) isn't directly measurable for fidelity, but excels in interpretability (9/10) while scoring lower on unambiguity (5/10).
+
+SHAP offers the most consistent global explanations.
+
+LIME provides the best fidelity for individual predictions.
+
+IML (interactive model with sliders) is easiest for human interpretation.
+
+<p align="center"> <img src="https://i.imgur.com/your-comparison-plot-image.png" alt="XAI Comparison Plot" width="600"/> </p>
+🛠️ Setup & Installation
+📦 Requirements
+Ensure Python 3 is installed, then install the following libraries:
+
+bash
+Copy
+Edit
+pip install pandas numpy tensorflow scikit-learn matplotlib shap lime ipywidgets
+💻 Running the Project
+Clone the repo:
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/house-price-xai.git
+cd house-price-xai
+Launch Jupyter Notebook or run the .ipynb file in your favorite IDE.
+
+Run each cell to preprocess data, train the model, and visualize the explainability results.
+
+📌 Summary
+This project bridges deep learning and model interpretability, delivering both predictive power and actionable insights. It's a valuable tool for:
+
+Data scientists wanting explainable regression models
+
+Real estate analysts seeking data-driven pricing
+
+Educators demonstrating ANN + XAI concepts interactively
